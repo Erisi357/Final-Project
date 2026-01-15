@@ -8,12 +8,80 @@
 </head>
 <body>
     <header class="header">
-        <div class="nav">
-            <h1>Urban Nest</h1>
-        </div>
+        <div class="nav-container">
+            <div class="name">
+                <h1>UrbanNest</h1>
+            </div>
 
-        <h1>test</h1>
-        <p>test</p>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Work</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="start">
+                <a href="#">Log In</a>
+                <button>Get Started</button>
+            </div>
+        </div>
     </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Discover Your Dream Home</h1>
+                    <p>Find the perfect place to live, from modern apartments to cozy family houses.</p>
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="find-home">
+            <div class="find-home-container">
+                <h1>Find Your Perfect Home</h1>
+                <p>Search homes by location,price and type.</p>
+                <div class="search-home">
+                    <textarea name="city" id="city" placeholder="Enter City or Area"></textarea>
+                    <div class="min-price-opt">
+                        <select>
+                            <option value="min-price">Min Price</option>
+                            <option value="min-price">100,000$</option>
+                            <option value="min-price">200,000$</option>
+                            <option value="min-price">300,000$</option>
+                        </select>
+                    </div>
+
+                    <div class="max-price-opt">
+                        <select>
+                            <option value="max-price">Max Price</option>
+                            <option value="max-price">300,000$</option>
+                            <option value="max-price">500,000$</option>
+                            <option value="max-price">700,000$</option>
+                        </select>
+                    </div>
+
+                    <div class="property">
+                        <select>
+                            <option value="property-type">Propety Type</option>
+                            <option value="property-type">House</option>
+                            <option value="property-type">Apartment</option>
+                            <option value="property-type">Villa</option>
+                            <option value="property-type">Penthouse</option>
+                        </select>
+                    </div>
+
+                    <div class="search-button">
+                        <button>Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
