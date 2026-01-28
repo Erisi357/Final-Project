@@ -3,249 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
     <link rel="stylesheet" href="style.css">
     <title>UrbanNest - Find Your Dream Home</title>
 </head>
 
 <body>
 
-<header class="header">
-    <div class="nav-container">
-        <h1 class="name">UrbanNest</h1>
+    <header class="header">
+        <div class="nav-container">
+            <h1 class="name">UrbanNest</h1>
 
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Work</a></li>
+                </ul>
+            </nav>
+
+            <div class="start">
+                <a href="#">Log In</a>
+                <button type="button">Get Started</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Discover Your Dream Home</h1>
+                    <p>
+                        Find the perfect place to live, from modern apartments
+                        to cozy family houses.
+                    </p>
+                    <button type="button">Get Started</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="find-home">
+            <div class="find-home-container">
+                <h1>Find Your Perfect Home</h1>
+                <p>Search homes by location, price and type.</p>
+
+                <div class="search-home">
+                    <input
+                        type="text"
+                        name="city"
+                        id="city"
+                        placeholder="Enter City or Area"
+                    >
+
+                    <div class="min-price-opt">
+                        <select>
+                            <option>Min Price</option>
+                            <option>100,000$</option>
+                            <option>200,000$</option>
+                            <option>300,000$</option>
+                        </select>
+                    </div>
+
+                    <div class="max-price-opt">
+                        <select>
+                            <option>Max Price</option>
+                            <option>300,000$</option>
+                            <option>500,000$</option>
+                            <option>700,000$</option>
+                        </select>
+                    </div>
+
+                    <div class="property-opt">
+                        <select>
+                            <option>Property Type</option>
+                            <option>House</option>
+                            <option>Apartment</option>
+                            <option>Villa</option>
+                            <option>Penthouse</option>
+                        </select>
+                    </div>
+
+                    <div class="search-button">
+                        <button type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-locations">
+            <div class="locations-container">
+                <h1>Explore Popular Locations</h1>
+
+                <div class="locations">
+                    <div class="location">
+                        <img src="images/newyork.png" alt="New York">
+                        <div class="location-overlay">
+                            <h3>New York</h3>
+                            <p>120 Properties</p>
+                        </div>
+                    </div>
+
+                    <div class="location">
+                        <img src="images/london.png" alt="London">
+                        <div class="location-overlay">
+                            <h3>London</h3>
+                            <p>98 Properties</p>
+                        </div>
+                    </div>
+
+                    <div class="location">
+                        <img src="images/tokyo.png" alt="Tokyo">
+                        <div class="location-overlay">
+                            <h3>Tokyo</h3>
+                            <p>112 Properties</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="locations-all">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <a href="#">View All Locations</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-properties">
+            <div class="properties-container">
+                <h1>Featured Properties</h1>
+
+                <div class="properties">
+                    <div class="property">
+                        <img
+                            src="images/modern-house.jpg"
+                            alt="Modern family house"
+                        >
+
+                        <div class="property-info">
+                            <h3>$475,000</h3>
+                            <p>Modern Family House</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="property-details">
+                            <p>3 Bedrooms</p>
+                            <p>2 Bathrooms</p>
+                            <p>1,150 sq ft</p>
+                        </div>
+
+                        <div class="property-location">
+                            <p>Los Angeles, CA</p>
+                            <button type="button">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="property">
+                        <img
+                            src="images/cozy-house.jpg"
+                            alt="Cozy downtown condo"
+                        >
+
+                        <div class="property-info">
+                            <h3>$365,000</h3>
+                            <p>Cozy Downtown Condo</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="property-details">
+                            <p>2 Bedrooms</p>
+                            <p>2 Bathrooms</p>
+                            <p>950 sq ft</p>
+                        </div>
+
+                        <div class="property-location">
+                            <p>Chicago, IL</p>
+                            <button type="button">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="property">
+                        <img
+                            src="images/pool-villa.jpg"
+                            alt="Luxury villa with pool"
+                        >
+
+                        <div class="property-info">
+                            <h3>$590,000</h3>
+                            <p>Luxury Villa With Pool</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="property-details">
+                            <p>4 Bedrooms</p>
+                            <p>3 Bathrooms</p>
+                            <p>2,000 sq ft</p>
+                        </div>
+
+                        <div class="property-location">
+                            <p>Miami, FL</p>
+                            <button type="button">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="how-it-works-container">
+                <h1>How It Works</h1>
+                <div class="divider"></div>
+                <p>Simple steps to find your dream home</p>
+
+                <div class="works-container">
+                    <div class="work">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <h3>Browse Listings</h3>
+                    </div>
+
+                    <div class="work">
+                        <i class="fa-solid fa-calendar"></i>
+                        <h3>Schedule A Visit</h3>
+                    </div>
+
+                    <div class="work">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Get Expert Help</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <h1>UrbanNest</h1>
+
+            <ul class="footer-main">
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Work</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Help</a></li>
             </ul>
-        </nav>
 
-        <div class="start">
-            <a href="#">Log In</a>
-            <button type="button">Get Started</button>
-        </div>
-    </div>
-</header>
-
-<main class="main">
-
-<section class="hero">
-    <div class="hero-container">
-        <div class="hero-text">
-            <h1>Discover Your Dream Home</h1>
-            <p>Find the perfect place to live, from modern apartments to cozy family houses.</p>
-            <button type="button">Get Started</button>
-        </div>
-    </div>
-</section>
-
-<section class="find-home">
-    <div class="find-home-container">
-        <h1>Find Your Perfect Home</h1>
-        <p>Search homes by location, price and type.</p>
-
-        <div class="search-home">
-            <input type="text" name="city" id="city" placeholder="Enter City or Area">
-
-            <div class="min-price-opt">
-                <select>
-                    <option>Min Price</option>
-                    <option>100,000$</option>
-                    <option>200,000$</option>
-                    <option>300,000$</option>
-                </select>
-            </div>
-
-            <div class="max-price-opt">
-                <select>
-                    <option>Max Price</option>
-                    <option>300,000$</option>
-                    <option>500,000$</option>
-                    <option>700,000$</option>
-                </select>
-            </div>
-
-            <div class="property-opt">
-                <select>
-                    <option>Property Type</option>
-                    <option>House</option>
-                    <option>Apartment</option>
-                    <option>Villa</option>
-                    <option>Penthouse</option>
-                </select>
-            </div>
-
-            <div class="search-button">
-                <button type="button">Search</button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="popular-locations">
-    <div class="locations-container">
-        <h1>Explore Popular Locations</h1>
-
-        <div class="locations">
-            <div class="location">
-                <img src="images/newyork.png" alt="New York">
-                <div class="location-overlay">
-                    <h3>New York</h3>
-                    <p>120 Properties</p>
-                </div>
-            </div>
-
-            <div class="location">
-                <img src="images/london.png" alt="London">
-                <div class="location-overlay">
-                    <h3>London</h3>
-                    <p>98 Properties</p>
-                </div>
-            </div>
-
-            <div class="location">
-                <img src="images/tokyo.png" alt="Tokyo">
-                <div class="location-overlay">
-                    <h3>Tokyo</h3>
-                    <p>112 Properties</p>
-                </div>
+            <div class="footer-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
             </div>
         </div>
 
-        <div class="locations-all">
-            <i class="fa-solid fa-arrow-right"></i>
-            <a href="#">View All Locations</a>
+        <div class="copyright">
+            <p>&copy; UrbanNest. All rights reserved.</p>
         </div>
-    </div>
-</section>
-
-<section class="featured-properties">
-    <div class="properties-container">
-        <h1>Featured Properties</h1>
-
-        <div class="properties">
-            <div class="property">
-                <img src="images/modern-house.jpg" alt="Modern family house">
-
-                <div class="property-info">
-                    <h3>$475,000</h3>
-                    <p>Modern Family House</p>
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="property-details">
-                    <p>3 Bedrooms</p>
-                    <p>2 Bathrooms</p>
-                    <p>1,150 sq ft</p>
-                </div>
-
-                <div class="property-location">
-                    <p>Los Angeles, CA</p>
-                    <button type="button">View Details</button>
-                </div>
-            </div>
-
-            <div class="property">
-                <img src="images/cozy-house.jpg" alt="Cozy downtown condo">
-
-                <div class="property-info">
-                    <h3>$365,000</h3>
-                    <p>Cozy Downtown Condo</p>
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="property-details">
-                    <p>2 Bedrooms</p>
-                    <p>2 Bathrooms</p>
-                    <p>950 sq ft</p>
-                </div>
-
-                <div class="property-location">
-                    <p>Chicago, IL</p>
-                    <button type="button">View Details</button>
-                </div>
-            </div>
-
-            <div class="property">
-                <img src="images/pool-villa.jpg" alt="Luxury villa with pool">
-
-                <div class="property-info">
-                    <h3>$590,000</h3>
-                    <p>Luxury Villa With Pool</p>
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="property-details">
-                    <p>4 Bedrooms</p>
-                    <p>3 Bathrooms</p>
-                    <p>2,000 sq ft</p>
-                </div>
-
-                <div class="property-location">
-                    <p>Miami, FL</p>
-                    <button type="button">View Details</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="how-it-works">
-    <div class="how-it-works-container">
-        <h1>How It Works</h1>
-        <div class="divider"></div>
-        <p>Simple steps to find your dream home</p>
-    
-        <div class="works-container">
-            <div class="work">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <h3>Browse Listings</h3>
-            </div>
-
-            <div class="work">
-                <i class="fa-solid fa-calendar"></i>
-                <h3>Schedule A Visit</h3>
-            </div>
-
-            <div class="work">
-                <i class="fa-solid fa-users"></i>
-                <h3>Get Expert Help</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
-</main>
-
-<footer class="footer">
-    <div class="footer-container">
-        <h1>UrbanNest</h1>
-        
-        <ul class="footer-main">
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Help</a></li>
-        </ul>
-
-        <div class="footer-icons">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-        </div>
-
-    </div>
-    
-    <div class="copyright">
-        <p>&copy; UrbanNest. All rights reserved.</p>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>
