@@ -1,61 +1,60 @@
-🏡 UrbanNest
+# 🏡 UrbanNest
 
-UrbanNest is a modern, responsive real estate website built using HTML and CSS.
-The goal of this project is to create a clean, user-friendly platform where users can easily browse properties, explore popular locations, and understand how the service works.
+**UrbanNest** is a modern, responsive real estate website built using **pure HTML and CSS**.
+The project focuses on clean design, strong layout structure, and an intuitive user experience—without using JavaScript or any frameworks.
 
-This project focuses on layout, design, and user experience, without using any JavaScript or frameworks.
+Users can browse properties, explore popular locations, and understand how the platform works through a clear and visually engaging interface.
 
-✨ Features
+---
 
-  Modern hero section with clear call-to-action
+## ✨ Features
 
-  Property search section with filters (location, price, type)
+* Modern hero section with a clear call-to-action
+* Property search section with filters (location, price, type)
+* Popular locations showcase with image overlays
+* Featured property cards with detailed information
+* Mission and **How It Works** sections
+* Contact section and footer
+* Fully responsive layout
+* Clean, reusable, and well-structured CSS
 
-  Popular locations showcase with image overlays
+---
 
-  Featured property cards with details
+## 🛠️ Built With
 
-  Mission & “How It Works” sections
+* **HTML5** – semantic and accessible structure
+* **CSS3** – Flexbox & Grid for layout
+* **Google Fonts** – modern typography
+* **Font Awesome** – icons
 
-  Contact and footer sections
+---
 
-  Fully responsive layout
+## 🎯 Project Purpose
 
-  Clean and reusable CSS structure
+This project was created to:
 
-🛠️ Built With
+* Practice building professional layouts using only HTML & CSS
+* Improve UI/UX design skills
+* Learn and apply responsive design techniques
+* Create a portfolio-ready frontend project
 
-  HTML5 – semantic structure
+---
 
-  CSS3 – Flexbox & Grid for layout
+## 📱 Responsive Design
 
-  Google Fonts – typography
+UrbanNest is fully responsive and works smoothly on:
 
-  Font Awesome – icons
+* Desktop
+* Tablet
+* Mobile devices
 
-🎯 Project Purpose
+Layouts adapt using flexible units, CSS Grid, and media-friendly styling.
 
-  This project was created to:
+---
 
-  Practice building professional layouts using only HTML & CSS
+## 🌐 Live Demo
 
-  Improve UI/UX design skills
+The website is hosted using **GitHub Pages** and is continuously updated after every commit:
 
-  Learn responsive design techniques
-
-  Create a portfolio-ready frontend project
-
-📱 Responsive Design
-
-  UrbanNest is designed to work on:
-
-  Desktop
-
-  Tablet
-
-  Mobile devices
-
-  Layouts adapt using flexible units, grid, and media-friendly styling.
-
-  **The website is online using GitHub Pages and it will be constantly updated after every commit**
-  **https://erisi357.github.io/Final-Project/**
+🔗 **Live Site:**
+[https://erisi357.github.io/Final-Project/](https://erisi357.github.io/Final-Project/)
