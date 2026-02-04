@@ -52,7 +52,6 @@ input {
   font-size: inherit;
 }
 
-
 .header {
   background-color: var(--bg-main);
   box-shadow: var(--shadow-soft);
@@ -62,7 +61,7 @@ input {
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   max-width: 1200px;
   margin: auto;
   padding: 10px 20px;
@@ -106,19 +105,6 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-
-.start {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.start a {
-  text-decoration: none;
-  font-size: 18px;
-  color: var(--text-main);
-}
-
 
 .hero {
   min-height: 80vh;
@@ -172,10 +158,11 @@ nav ul li a:hover::after {
 
 .find-home {
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: var(--primary-soft);
-  height: 40vh;
-  padding: 35px 30px;
+  height: 60vh;
+  padding: 25px;
 }
 
 .find-home-container {
@@ -184,7 +171,7 @@ nav ul li a:hover::after {
 
 .find-home-container h1 {
   font-size: 40px;
-  margin: 15px;
+  margin: 0px;
 }
 
 .find-home-container p {
@@ -238,18 +225,39 @@ nav ul li a:hover::after {
 
 .locations-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.location-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.location-left h1{
+  font-size: 50px;
+  line-height: 1.4;
+}
+
+.location-left a{
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--text-main);
 }
 
 .locations {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 20px;
 }
 
 .location {
@@ -264,8 +272,7 @@ nav ul li a:hover::after {
 }
 
 .location:hover{
-    transform: scale(1.10);
-    margin: 0 15px 0 15px;
+  transform: scale(1.05);
 }
 
 .location img {
@@ -303,20 +310,15 @@ nav ul li a:hover::after {
   margin: 40px 0;
 }
 
-.locations-all a {
-  text-decoration: none;
-  color: var(--text-main);
-  font-size: 25px;
-}
-
-.locations-all a:hover{
-  text-decoration: underline;
-}
-
 .properties-container {
   max-width: 1200px;
   margin: auto;
   text-align: center;
+}
+
+.properties-container h1{
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 
 .properties {
@@ -355,9 +357,6 @@ nav ul li a:hover::after {
 .divider{
     height: 2px;
     background-color: var(--bg-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 90%;
     margin: 0 auto;
 }
@@ -386,7 +385,8 @@ nav ul li a:hover::after {
     align-items: center;
     justify-content: center;
     margin-bottom: 15px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .property-location button{
@@ -1086,51 +1086,112 @@ footer ul li a:hover::after{
   margin: 0;
 }
 
-.locations-contact-us{
+/* FAQ Syles */
+
+.faqs{
+  padding: 60px 20px;
+  background-color: var(--bg-main);
+}
+
+.faq-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  background-color: var(--bg-main);
-  width: 840px;
-  padding: 30px;
-  border-radius: 5px;
-  border: 1px solid var(--border-soft-dark);
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text-dark);
 }
 
-.locations-contact-us h3{
-  font-size: 25px;
+.faq-container h1{
+  font-size: 55px;
+  font-weight: 700;
   margin: 0;
 }
 
-.locations-contact-us p{
-  color: var(--text-soft);
-  font-size: 18px;
-  line-height: 1.6;
-  max-width: 70%;
-  margin: 20px 0 20px 0;
+.faq-container h3{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 30px 0;
 }
 
-.locations-contact-us button{
-  width: 35%;
-  border: none;
-  outline: none;
+.faq-cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 30px;
+}
+
+.faq{
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-soft-dark);
   border-radius: 5px;
-  padding: 15px;
-  background-color: var(--bg-dark);
+  box-shadow: var(--shadow-hard);
   cursor: pointer;
+  transition: .3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq:hover{
+  transform: translateY(-8px);
+}
+
+.faq h2{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0 15px 20px;
+}
+
+.faq-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-header i{
+  margin: 0 20px 0 0;
+  font-size: 17px;
+}
+
+.faq-paragraph{
+  background-color: var(--bg-soft);
+  flex: 1;
+}
+
+.faq-paragraph p{
+  margin-left: 20px;
+  font-size: 16px;
+  text-align: left;
+  width: 90%;
+}
+
+.still-have-questions{
+  text-align: center;
+  padding: 10px;
+}
+
+.still-have-questions h2{
+  font-size: 30px;
+}
+
+.still-have-questions a{
+  border: 1px solid var(--text-main);
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 18px;
   transition: .3s ease-in-out;
 }
 
-.locations-contact-us a{
-  color: var(--text-white);
-  text-decoration: none;
-  font-size: 18px;
-  margin: 10px 0 0 0 ;
-}
-
-.locations-contact-us button:hover{
-  background-color: var(--bg-hover-dark);
+.still-have-questions a:hover{
   transform: scale(1.10);
+  background-color: var(--bg-hover-dark);
+  border-color: var(--border-soft-dark);
+  color: var(--text-white);
 }
