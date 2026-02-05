@@ -1195,3 +1195,199 @@ footer ul li a:hover::after{
   border-color: var(--border-soft-dark);
   color: var(--text-white);
 }
+
+/* ====================== */
+/* MOBILE & TABLET FIXES */
+/* ====================== */
+
+/* NAVIGATION */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: auto;
+  }
+
+  nav ul li {
+    padding: 0;
+  }
+}
+
+/* HERO */
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+/* FIND HOME */
+@media (max-width: 768px) {
+  .find-home {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .search-home {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+/* POPULAR LOCATIONS – TABLET */
+@media (max-width: 768px){
+  .locations-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .location-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+  .locations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .location-left h1 {
+  font-size: 30px;
+}
+
+.location-left a {
+  font-size: 17px;
+}
+
+/* CARDS SMALLER */
+.locations {
+  gap: 12px;
+}
+
+.location {
+  max-width: 280px;
+}
+
+.location img {
+  height: 100%;
+}
+
+.location-overlay h3 {
+  font-size: 16px;
+}
+
+.location-overlay p {
+  font-size: 13px;
+}
+}
+
+
+/* PROPERTIES */
+@media (max-width: 768px) {
+  .properties {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .property {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* HOW IT WORKS */
+@media (max-width: 768px) {
+  .works-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 15px;
+  }
+}
+
+/* CHOOSE US */
+@media (max-width: 768px) {
+  .choose-us-features {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 15px;
+  }
+}
+
+/* MISSION / ABOUT */
+@media (max-width: 768px) {
+  .mission-example {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 15px;
+  }
+
+  .about-hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+/* TESTIMONIALS */
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+}
+
+/* FAQ */
+@media (max-width: 768px) {
+  .faq-cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+}
+
+/* CONTACT */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-form form {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+/* TABLET */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .properties,
+  .works-container,
+  .choose-us-features,
+  .mission-example,
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
